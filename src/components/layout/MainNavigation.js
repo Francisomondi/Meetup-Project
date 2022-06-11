@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import classes from "./MainNavigation.module.css";
 
 const MainNavigation = () => {
   return (
-    <header>
+    <header className={classes.header}>
       <div>React meetups</div>
       <nav>
         <ul>
