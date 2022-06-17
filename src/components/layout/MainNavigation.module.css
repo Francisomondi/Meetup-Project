@@ -21,10 +21,6 @@
   display: flex;
   align-items: baseline;
 }
-img {
-  width: 100px;
-  height: 100px;
-}
 
 .header li {
   margin-left: 3rem;
