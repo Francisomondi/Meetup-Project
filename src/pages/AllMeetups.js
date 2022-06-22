@@ -24,15 +24,16 @@ const DUMMY_DATA = [
 const AllMeetups = () => {
   return (
     <section>
-      <h1>All Meet ups</h1>
+      <h1>{DUMMY_DATA.title}</h1>
 
       {DUMMY_DATA.map(meetup => {
         return (
           <div>
             <li key={meetup.id}>{meetup.title}</li>;
             <div className={classes.img}>
-              <img src={meetup.image} />
+              <img src={meetup.image} alt="this is a sample item" />
             </div>
+            <section>{meetup.description}</section>
           </div>
         );
       })}
