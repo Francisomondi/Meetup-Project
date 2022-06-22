@@ -1,5 +1,6 @@
 import React from "react";
-import classes from "./Meetups.module.css";
+import MeetupList from "../components/meetups/MeetupList";
+
 const DUMMY_DATA = [
   {
     id: "m1",
@@ -24,19 +25,8 @@ const DUMMY_DATA = [
 const AllMeetups = () => {
   return (
     <section>
-      <h1>{DUMMY_DATA.title}</h1>
-
-      {DUMMY_DATA.map(meetup => {
-        return (
-          <div>
-            <li key={meetup.id}>{meetup.title}</li>;
-            <div className={classes.img}>
-              <img src={meetup.image} alt="this is a sample item" />
-            </div>
-            <section>{meetup.description}</section>
-          </div>
-        );
-      })}
+      <h1>All MeetUps</h1>
+      <MeetupList meetups={DUMMY_DATA} />
     </section>
   );
 };
