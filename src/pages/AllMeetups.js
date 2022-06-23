@@ -23,6 +23,9 @@ const DUMMY_DATA = [
 ];
 
 const AllMeetups = () => {
+  fetch(
+    "https://react-meetup-project-87fa1-default-rtdb.firebaseio.com/meetups.json"
+  );
   return (
     <section>
       <h1>All MeetUps</h1>
